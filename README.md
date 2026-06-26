@@ -6,14 +6,14 @@ monochrome encoding). Same honesty boundary as the backend doc: this is complete
 run locally, not a build I could compile against the live API from here.
 
 ## Run
-1. `npm install`
+1. `npm install` (at the root folder)
 2. Copy `.env.example` → `.env.local` and set:
    - `NEXT_PUBLIC_API_URL` — the backend, e.g. `http://localhost:5080/api`
    - `NEXT_PUBLIC_GOOGLE_CLIENT_ID` — your Google OAuth web client ID (same Google project the
      backend validates against)
 3. `npm run dev` → http://localhost:3000
 4. Start the backend too, and make sure its CORS `Frontend:Origin` matches `http://localhost:3000`.
-
+sample
 ## Pages & flow
 | Route | Purpose | Backend calls |
 |---|---|---|
