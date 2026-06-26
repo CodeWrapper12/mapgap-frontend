@@ -3,7 +3,8 @@ import type {
   CoverLetterInputs, CoverLetterResult, HistoryItem,
 } from "./types";
 
-const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5080/api";
+const RAW_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:5080";
+const BASE = `${RAW_URL.replace(/\/$/, "")}/api`;
 const TOKEN_KEY = "gapmap_token";
 
 export const tokenStore = {
